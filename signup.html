@@ -48,7 +48,7 @@
   </head>
   <body class="text-center">
     <main class="form-signin">
-      <form>
+      <form action="/" method="POST" >
         <img class="mb-4" src="images/mac.png" alt="" width="72" height="57" />
         <h3 class="h3 mb-3 fw-normal">Signup to-My Newsletter!</h3>
 
@@ -56,6 +56,7 @@
           type="text"
           class="form-control top"
           placeholder="First Name"
+          name="fname"
           required
           autofocus
         />
@@ -64,6 +65,7 @@
         type="text"
         class="form-control middle"
         placeholder="Last Name"
+        name="lname"
         required
       />
 
@@ -71,6 +73,7 @@
           type="email"
           class="form-control bottom"
           placeholder="email"
+          name="email"
           required
         />
 
