@@ -32,9 +32,13 @@ app.post("/",function (req,res) {
     const jsonData = JSON.stringify(data);
     console.log(firstName,lastName,email);
 
-    const url = "https://usX.api.mailchimp.com/3.0/lists"
+   
     https.request(url,options,function(response){
 
+        response.on("data",function (data) {
+            var dataa = JSON.parse(data);
+            console.log(dataa);
+        })
     })
 
 })
@@ -44,8 +48,3 @@ app.listen(3000,function(){
 })
 
 
-//Api key
-//c32a504b13277d128e04d57312616cf6-us1
-
-//List Id
-//cdbcd94809
