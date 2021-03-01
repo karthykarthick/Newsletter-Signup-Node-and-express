@@ -1,7 +1,7 @@
 # Newsletter-Signup-Node-and-express
 
 > This project consists of developing NewsLetter Page using the recently acquired knowledge in Node and Express.it will save the details in to the mailchimps server using its Api
-![screenshot](./screenshot.png)
+
 
 ## Built With
 - HTML & CSS
